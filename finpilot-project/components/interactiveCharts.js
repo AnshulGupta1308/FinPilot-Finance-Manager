@@ -9,6 +9,7 @@ const Interactive = ({ filteredTransactions }) => {
   function truncateToTwoDecimals(num) {
     return Math.trunc(num * 100) / 100;
   }
+  const fileData=["predictions","charts","category"]
   const data = filteredTransactions
     .map(tx => ({
       date: new Date(tx.timestamp).toLocaleDateString(),
