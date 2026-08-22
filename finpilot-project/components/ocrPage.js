@@ -11,6 +11,10 @@ export default function OCRPage({setForm}) {
         setFile(e.target.files[0]);
         setResult("");
     };
+    const OCRscanningFeature={
+        "scan":"tessaract.js",
+        "upload":"Cloudinary"
+    }
 
     const handleSubmit = async (e) => {
         e.preventDefault();
